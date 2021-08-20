@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../home.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="logo">LojaDaJapa.com</li>
+				<li class="btn"><span class="fas fa-bars"></span></li>
+				<div class="items">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Categorias</a></li>
+					<li><a href="#">Perfil</a></li>
+					<li><a href="#">Sobre Nós</a></li>
+				</div>
+				<li class="search-icon">
+				<input type="search" placeholder="Pesquisar">
+				<label class="icon">
+					<span class="fas fa-search" style="color: rgb(53, 98, 150)"></span>
+				</label>
+				</li>
+			</ul>
+		</nav>
+
+		<img class="principal" src="img/flor.jpg" alt="flor">
+
+		<div class="linha">
+			<div class="categoria">
+				<a href="#">
+					<img src="img/cozinha.jpg" alt="categoria cozinha">
+					<p>Cozinha</p>
+				</a>
+			</div>
+			<div class="categoria">
+				<a href="#">
+					<img src="img/plantas.jpg" alt="categoria plantas">
+					<p>Plantas</p>
+				</a>
+			</div>
+			<div class="categoria">
+				<a href="#">
+					<img src="img/ferr.jpg" alt="categoria ferramentas">
+					<p>Ferramentas</p>
+				</a>
+			</div>
+		</div>
+
+		<footer>
+			<div class="main-content">
+				<div class="left box">
+					<h2>Sobre Nós</h2>
+						<div class="content">
+							<p>Loja da Japa, NF</p>
+								<div class="social">
+									<a href="#"><span class="fab fa-facebook-f"></span></a>
+									<a href="#"><span class="fab fa-twitter"></span></a>
+									<a href="#"><span class="fab fa-instagram"></span></a>
+									<a href="#"><span class="fab fa-youtube"></span></a>
+								</div>
+						</div>
+				</div>
+
+				<div class="center box">
+					<h2>Endereço</h2>
+					<div class="content">
+						<div class="place">
+							<span class="fas fa-map-marker-alt"></span>
+							<span class="text">Nova Friburgo, RJ</span>
+						</div>
+						<div class="Telefone">
+							<span class="fas fa-phone-alt"></span>
+							<span class="text">(22)2521-0170</span>
+						</div>
+					</div>
+				</div>
+					
+			</div>
+		</footer>
+	</body>
+</html>
+
+<script>
+	$('nav ul li.btn span').click(function(){
+		$('nav ul div.items').toggleClass("show");
+		$('nav ul li.btn span').toggleClass("show");
+	});
+</script>
