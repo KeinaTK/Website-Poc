@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: cornsilk;
+    color: crimson;
+}
+
+.tabela {
+    margin: 70px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.foto {
+    margin-left: 100px;
+}
+
+.foto img {
+    width: 500px;
+    border: 1px rgb(71, 70, 70) solid;
+}
+
+.dados {
+    margin: 100px;
+}
+
+.dados h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dados p {
+    color: rgb(126, 122, 122);
+}
+
+.dados h2 {
+    margin: 20px 0 10px 0;
+    color: rgb(209, 93, 103);
+}
+
+.dados h3 {
+    color: rgb(209, 93, 103);
+    margin-bottom: 20px;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type=number] {
+    padding: 8px;
+    width: 110px;
+    font-size: medium;
+    border: rgb(209, 93, 103) solid 1px;
+    color: rgb(209, 93, 103);
+    font-weight: bold;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    border: none;
+}
+
+button a {
+    position: relative;
+    display: block;
+    height: 70px;
+    width: 220px;
+    color: #f5f5f5;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+button a span {
+    height: 88%;
+    width: 98%;
+    background: #111;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    line-height: 62px;
+    color: #f5f5f5;
+    font-size: 25px;
+}
+
+button a:hover {
+    animation: animate 0.6s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(-360deg);
+    }
+}
+
+.frete {
+    height: 70px;
+    width: 120px;
+    background-color: crimson;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.frete a {
+    color: #f5f5f5;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    line-height: 62px;
+    text-decoration: none;
+}
+
+.frete a:hover {
+    background-color: rgb(192, 18, 53);
+}
